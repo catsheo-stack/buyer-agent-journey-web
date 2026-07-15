@@ -41,7 +41,7 @@ export default function Tour() {
   const ActiveSlide = SLIDES[index];
 
   return (
-    <div className="fixed inset-0 wealth-flow-background overflow-hidden">
+    <div className="fixed inset-0 wealth-flow-background overflow-y-auto overscroll-contain md:overflow-hidden">
       <ProgressBar value={(index + 1) / SLIDES.length} />
       <AnimatePresence mode="wait">
         <motion.div
@@ -50,7 +50,7 @@ export default function Tour() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -40 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="absolute inset-0"
+          className="relative min-h-full w-full md:absolute md:inset-0"
         >
           <ActiveSlide onNext={() => go(1)} />
         </motion.div>

@@ -60,3 +60,10 @@ The included `vercel.json` supports React Router fallback routing.
 ## Base44 note
 
 This version no longer requires Base44 authentication to display the website. Legacy Base44 files remain in the source folder for reference, but they are not loaded by the standalone app.
+
+## Stage 2 responsive update
+
+- Mobile tour container now scrolls vertically with touch gestures.
+- Property Comparison cards stack on mobile so every property can be viewed.
+- Comparison footer is placed after the full card list to prevent overlap.
+- Negotiation slide now uses a consistent premium blue and gold treatment.

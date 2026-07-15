@@ -36,17 +36,17 @@ export default function Slide04() {
     <SlideShell
       number="04"
       label="PROPERTY COMPARISON"
-      footer={<p className="text-sm text-white/50">Helping clients compare apples with apples.</p>}
+      footer={<p className="text-sm text-white/55">Helping clients compare apples with apples.</p>}
     >
-      <h2 className="font-serif-display text-3xl md:text-4xl lg:text-5xl text-white text-center mb-10">
+      <h2 className="font-serif-display text-3xl md:text-4xl lg:text-5xl text-white text-center mb-8 md:mb-10">
         Decide with clarity.
       </h2>
-      <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto w-full pb-2">
         {CARDS.map((c) => (
           <div
             key={c.addr}
             className={cn(
-              "relative rounded-lg bg-navy-surface/80 p-5 flex flex-col items-center",
+              "relative min-h-[430px] rounded-lg bg-navy-surface/80 p-5 flex flex-col items-center",
               c.recommended ? "border-2 border-gold shadow-[0_0_30px_rgba(197,160,89,0.15)]" : "border border-white/10"
             )}
           >
